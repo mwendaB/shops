@@ -1,33 +1,33 @@
 {
-  "name": "shopping-app",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "apneck-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@gorhom/bottom-sheet": "^4",
-    "@react-navigation/bottom-tabs": "^6.5.7",
-    "@react-navigation/native": "^6.1.6",
-    "@react-navigation/native-stack": "^6.9.12",
-    "expo": "~48.0.9",
-    "expo-blur": "~12.2.2",
-    "expo-status-bar": "~1.4.4",
-    "react": "18.2.0",
-    "react-native": "0.71.6",
-    "react-native-gesture-handler": "~2.9.0",
-    "react-native-reanimated": "~2.14.4",
-    "react-native-safe-area-context": "4.5.0",
-    "react-native-screens": "~3.20.0",
-    "reanimated-masonry-list": "^1.0.1"
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.3.0-alpha3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.5.2",
+    "react-icons": "^4.8.0",
+    "react-rating-stars-component": "^2.2.0",
+    "react-router-dom": "^6.11.1",
+    "react-router-use-history": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@types/react": "~18.0.14",
-    "typescript": "^4.9.4"
-  },
-  "private": true
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "vite": "^4.3.2"
+  }
 }
